@@ -1,5 +1,7 @@
 #aliases for git
+alias co='checkout'
 alias st='status'
+alias p='pull'
 
 # rsync
 alias sy='rsync -rtvz --delete '
