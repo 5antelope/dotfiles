@@ -1,4 +1,5 @@
-source ~/.vim/bundles.vim
+" enable syntax hightlight and completion
+syntax on
 
 " encoding dectection
 set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
@@ -6,15 +7,12 @@ set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
 " enable filetype dectection and ft specific plugin/indent
 filetype plugin indent on
 
-" enable syntax hightlight and completion
-syntax on
-
 "--------
 " Vim UI
 "--------
 " color scheme
 set background=dark
-colorscheme gruvbox
+colorscheme solarized
 
 " highlight current line
 au WinLeave * set nocursorline nocursorcolumn
@@ -97,6 +95,9 @@ let g:rbpt_colorpairs = [
 let g:rbpt_max = 16
 autocmd Syntax lisp,scheme,clojure,racket RainbowParenthesesToggle
 
+" strip whitespace on save
+autocmd BufWritePre * StripWhitespace
+
 " tabbar
 let g:Tb_MaxSize = 2
 let g:Tb_TabWrap = 1
@@ -105,9 +106,6 @@ hi Tb_Normal guifg=white ctermfg=white
 hi Tb_Changed guifg=green ctermfg=green
 hi Tb_VisibleNormal ctermbg=252 ctermfg=235
 hi Tb_VisibleChanged guifg=green ctermbg=252 ctermfg=white
-
-" easy-motion
-let g:EasyMotion_leader_key = '<Leader>'
 
 " Tagbar
 let g:tagbar_left=1
