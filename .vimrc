@@ -11,6 +11,7 @@ filetype plugin indent on
 " Vim UI
 "--------
 " color scheme
+execute pathogen#infect()
 set background=dark
 colorscheme solarized
 
