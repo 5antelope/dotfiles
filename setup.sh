@@ -100,4 +100,3 @@ curl -LSso ~/.tmux.conf https://raw.githubusercontent.com/wy4515/dotfiles/master
 
 source ~/.zshrc
 tmux source-file ~/.tmux.conf
-
