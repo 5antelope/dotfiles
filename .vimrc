@@ -25,7 +25,8 @@ set incsearch
 "set highlight 	" conflict with highlight current line
 set ignorecase
 set smartcase
-
+" mouse selection
+set mouse=r
 " editor settings
 set history=1000
 set nocompatible
