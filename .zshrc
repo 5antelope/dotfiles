@@ -5,7 +5,7 @@ ZSH_THEME="pygmalion"
 
 source $ZSH/oh-my-zsh.sh
 source ~/.zsh_aliases
-source ~/.fzf.bash
+source ~/.fzf.zsh
 
 # disable zsh autocorrect
 unsetopt correct_all
