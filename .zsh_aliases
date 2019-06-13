@@ -1,0 +1,8 @@
+#aliases for git
+alias st='status'
+
+# rsync
+alias sy='rsync -rtvz --delete '
+
+# to prevent zsh from complainting rake new_page[pagename]
+alias rake='noglob rake'
